@@ -291,6 +291,9 @@ task.wait(5)
 
 local factor = 0.11 -- We may take (Inevitably) more than 5 seconds per task, i.e: PC limitation.
 
+traverse_table(getgenv())
+traverse_table(getrenv())
+
 print(
 	"Found "
 		.. #foundClosures
